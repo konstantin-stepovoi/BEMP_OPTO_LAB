@@ -1,0 +1,31 @@
+Raw Files ---------------------------------------------
+dx,dy: Step size in y-/x-Axis [um]
+Fs: Sampling rate of digital acquisition card(DAQ) [/second]
+InputRange: input range of DAQ [mV]
+Lx,Ly: Scanning range in x-/y-direction [mm]
+positionXY: Actual positions of transducer during scan [mm]
+RepRate: Repetition rate of laser [/sec]
+S: Raw Scanning Signal [mV]
+ShiftCorrFlag: Flag for reconstruction code
+trigDelay: delay for acquisition card to start saving data after laser trigger [samples]
+vAct: movement speed of transducer[um/sec]
+xLim/yLim: position of limits of scanned area [mm]
+Z: I don't know
+
+Reconstructed files (Files with a "R_" prefix)---------------------
+aP: Acquisition parameters (See above or contact for details)
+dP: detector Parameters (See above or contact for details)
+fP: File parameters: Where the files are loaded/saved
+R: Reconstructed data
+rP: Reconstruction parameters
+	focusModel/bPMode/bPWeight/coRegistration/reflectionFilter/bandpassFilter: filtering options for recon script
+	f_low/f_high: Frequencies selected for bandpass filter
+	v_s: speed of sound
+	z_lowRel/z_upRel: unimportant (crop irellevant signal)
+	blockSize: unimportant (Reconstruction is parallelized in blocks)
+	dz: depth resolution in z-axis [um]
+	ds: spatial resolution in x/y-axis [um]
+	maxOffset,y_shiftInd,platform,deviceType,y_grid,x_grid,N_slab,z_grid: irrelevant parameters used during reconstruction
+	N_y: number of voxels in y-direction
+	N_x: number of voxels in x-direction
+	N_z: number of voxels in z-direction
